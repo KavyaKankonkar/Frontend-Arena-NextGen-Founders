@@ -1,0 +1,127 @@
+/* *{
+    margin:0;
+    padding :0;
+
+}
+.ldoor img{
+    display:flex;
+    justify-content: flex-start;
+    width:90%;  
+    height: 100%;
+    position: absolute;
+   left:0;
+   animation: ldoor 3s;
+}
+.container{
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.container iframe{
+    position: absolute;
+    width:50vw;
+    top:50%;
+    bottom:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.rdoor img{
+    display:flex;
+    justify-content: flex-end;
+    width:90%;
+    height: 100%;
+    position: absolute;
+    right:0;
+    animation: rdoor 3s;
+}
+@keyframes ldoor{
+    from{
+        left:0;
+    }
+    to{
+        left:-50%;
+    }
+}
+@keyframes rdoor{
+    from{
+        right:0;
+    }
+    to{
+        right:-50%;
+    }
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;  /* Adjust size */
+    cursor: pointer;
+    z-index: 10;  /* Ensure it appears over video */
+}
+#video {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Hide initially */
+    pointer-events: none; /* Prevent user interaction */
+}
+
+.ldoor, .rdoor {
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+}
+
+.ldoor img, .rdoor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.ldoor {
+    left: 0;
+    animation: ldoor 3s forwards;
+}
+
+.rdoor {
+    right: 0;
+    animation: rdoor 3s forwards;
+}
+
+@keyframes ldoor {
+    from {
+        left: 0;
+    }
+    to {
+        left: -50vw;
+    }
+}
+
+@keyframes rdoor {
+    from {
+        right: 0;
+    }
+    to {
+        right: -50vw;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Museum Tour</title>
+    <link href="Page3.css" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background: #000;
+        }
+        #tour-container {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+        }
+        #logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Clickable Logo (Takes user to another page) -->
+    <!-- <img id="logo" src="main_page_img1.jpg" alt="Home" onclick="window.location.href='nextpage.html'"> -->
+    <a href="https://app.lapentor.com/sphere/museum-toor" target="_blank">
+        <img src="main_page_img1.jpg" alt="Virtual Tour" width="300px">
+    </a>
+    <!-- Lapentor Virtual Tour Embed -->
+    <!-- <iframe id="tour-container"
+        src="https://app.lapentor.com/sphere/museum-toor"
+        scrolling="no"
+        allow="vr,gyroscope,accelerometer"
+        allowfullscreen>
+    </iframe> -->
+
+</body>
+</html>
