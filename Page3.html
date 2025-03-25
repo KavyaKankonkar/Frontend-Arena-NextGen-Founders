@@ -3,46 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Museum Tour</title>
-    <link href="Page3.css" rel="stylesheet">
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-            background: #000;
-        }
-        #tour-container {
-            width: 100vw;
-            height: 100vh;
-            border: none;
-        }
-        #logo {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 100px;
-            cursor: pointer;
-            z-index: 1000;
-        }
-    </style>
+    <title>Virtual Art Gallery</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <!-- Clickable Logo (Takes user to another page) -->
-    <!-- <img id="logo" src="main_page_img1.jpg" alt="Home" onclick="window.location.href='nextpage.html'"> -->
-    <a href="https://app.lapentor.com/sphere/museum-toor" target="_blank">
-        <img src="main_page_img1.jpg" alt="Virtual Tour" width="300px">
-    </a>
-    <!-- Lapentor Virtual Tour Embed -->
-    <!-- <iframe id="tour-container"
-        src="https://app.lapentor.com/sphere/museum-toor"
-        scrolling="no"
-        allow="vr,gyroscope,accelerometer"
-        allowfullscreen>
-    </iframe> -->
+    <!-- Navigation -->
+    <header>
+        <div class="hero-section">
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">SIGN UP</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                </ul>
+            </nav>
 
-</body>
-</html>
+            <!-- <div class="custom-shape-divider">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+                </svg>
+            </div> -->
+            <div class="custom-shape-divider">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V20C200,80,600,80,1200,20V0Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Explore Art Without Boundaries</h1>
+            <p>Step into our virtual gallery and experience masterpieces from around the world</p>
+            <div class="buttons">
+                <a href="#featured" class="btn primary">
+                    Explore Gallery <span class="arrow">→</span>
+                </a>
+                <a href="#tour" class="btn secondary">
+                    <i class="fas fa-play"></i> Start Tour
+                </a>
+            </div>
+        </div>
+        <div class="decorative-circle left"></div>
+        <div class="decorative-circle right"></div>
+    </section>
+
+    <section id="featured">
+        <h2>Featured Artworks</h2>
+        <p>Discover our curated collection of masterpieces from renowned artists</p>
+
+        <!-- Grid / Carousel Toggle -->
+        <!-- <div class="toggle-buttons">
+            <button id="gridViewBtn" class="active"><i class="fas fa-th"></i> Grid View</button>
+             <button id="carouselViewBtn"><i class="fas fa-sliders-h"></i> Carousel View</button> 
+        </div> -->
+
+        <!-- Grid View -->
+        <div class="art-grid">
+            <div class="art-item"><img src="art 1.jpg" alt="Artwork 1"></div>
+            <div class="art-item"><img src="art 2.jpg" alt="Artwork 2"></div>
+            <div class="art-item"><img src="art 3.jpg" alt="Artwork 3"></div>
+            <div class="art-item"><img src="art 4.jpg" alt="Artwork 4"></div>
+            <div class="art-item"><img src="art 5.jpg" alt="Artwork 5"></div>
+            <div class="art-item"><img src="art 6.jpg" alt="Artwork 6"></div>
+        </div>
